@@ -1,0 +1,32 @@
+/* Add a unique class name, e.g., .menu-icon, to all selectors */
+.menu-icon .container {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute; /* Position it absolutely */
+  left: 0; /* Align it to the left */
+  top: 0; /* Align it to the top */
+  padding: 10px; /* Add some padding */
+  width: 265px;
+  background-color: aliceblue;
+  position: fixed;
+}
+
+.menu-icon .bar1, .menu-icon .bar2, .menu-icon .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.menu-icon .change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.menu-icon .change .bar2 {
+  opacity: 0;
+}
+
+.menu-icon .change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
